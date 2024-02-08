@@ -1,42 +1,107 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+nav {
+  background-color: #efe8e8; 
+  color: white;
+  padding: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 190, 201);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* SearchBar styles */
+form {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 6px;
+  color: #373737;
+  box-shadow: #0000001a 0 0 8px 0 ;
+  border: 1px solid #e6e7eb;
 }
 
-.card {
-  padding: 2em;
+button {
+  padding: 6px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
-.read-the-docs {
-  color: #888;
+.display-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 7rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 6px;
+  color: #373737;
+  box-shadow: #0000001a 0 0 8px 0 ;
+  border: 1px solid #e6e7eb;
+}
+
+.maintime{
+  background-color:#ffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  color: #373737;
+  box-shadow: #0000001a 0 0 8px 0 ;
+  gap:10px;
+  border: 1px solid #e6e7eb;
+}
+
+.group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1rem;
+}
+
+.select{
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #e6e7eb;
+  padding: 0.2rem 2rem 0.2rem 0.5rem;
+  background-color: #ffff;
+  color: #5a5b5b;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  background-color: #f3eded;
+}
+
+.json-input{
+  display: flex;
+  flex-direction: row;
+  color:#464747;
+  gap: 1rem;
 }
