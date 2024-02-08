@@ -20,6 +20,7 @@ nav {
 form {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 input {
@@ -104,4 +105,5 @@ button {
   flex-direction: row;
   color:#464747;
   gap: 1rem;
+  padding-left: 7rem;
 }
